@@ -1,41 +1,41 @@
 #
-# TotalFreedomMod v4.3 Configuration
-# by Madgeek1450 and Prozza
+# JelloFreedom v1 Configuration
+# by JelloPvP
 #
 
 # Generic server information
 server:
-  # You should change this to your server's name
-  name: TotalFreedom
+  # Change to your server name
+  name: JelloFreedom
 
-  # The address your server is located at. Please do not include the port.
+  # Your server adress #DONT ADD PORT#
   address: play.totalfreedom.me
 
-  # Shown at the server list
-  motd: TotalFreedom &8- Minecraft %mcversion%
+  # Shown on Server List!
+  motd: JelloFreedom &8- Minecraft %mcversion%
 
   # Every word in the MOTD will be a different color unless prefixed by a color code
   colorful_motd: true
 
   # All players who show up as owner
   owners:
-    - markbyron
+    - JelloPvP
 
   # URL players should appeal for bans at
-  ban_url: http://totalfreedom.boards.net/
+  ban_url: 
 
   # URL players should appeal for permanent bans at
-  permban_url: http://bit.ly/TF_PermBan
+  permban_url: 
 
 # ForceIP configuration
 forceip:
   enabled: false
 
-  # The port players should use to connect to your server; only applies to forceip
+  # Leave the same if you dont have a port!
   port: 25565
 
   # The kick message sent to players when logging in with the wrong hostname
-  kickmsg: You have been kicked from the server - Please connect using %address%
+  kickmsg: The URL has been changed - Please connect using %address%
 
 
 # Blocking certain events
@@ -48,7 +48,7 @@ allow:
   water_place: false
   tnt_minecarts: false
   explosions: false
-
+  command_blocks: false
 # Blocked commands:
 #
 # How blocked commands work:
@@ -92,7 +92,6 @@ blocked_commands:
   - 'n:b:/pardon-ip:_'
   - 'n:b:/toggledownfall:_'
   - 'n:b:/effect:Please use /potion to set effects.'
-  - 'n:b:/enderchest:_'
   - 'n:b:/spreadplayers:_'
   - 'n:b:/execute:_'
   - 'n:b:/blockdata:_'
@@ -100,6 +99,7 @@ blocked_commands:
   - 'n:b:/save-all:_'
   - 'n:b:/save-on:_'
   - 'n:b:/save-off:_'
+  -'n':b:/stop:_'
 
   # Superadmin commands
   - 's:b:/kick:_'
@@ -210,72 +210,14 @@ announcer:
   interval: 600
 
   # Prefix for all announcements
-  prefix: '&5[&eTotalFreedom&5] &b'
+  prefix: '&5[&eJelloFreedom&5] &b'
 
   announcements:
-    - 'Be sure to visit our forums at &6http://totalfreedom.boards.net/'
-    - 'You can always review the server rules here: &6http://totalfreedom.me/'
-    - 'If you are not OP, be sure to ask!'
-    - 'Somebody breaking the rules?  Report it!  /report <user> <reason>'
-    - 'Griefing is not allowed!'
-    - 'Hacking is allowed!'
-    - 'Interested in becoming admin? Do "/ai" for more information!'
-    - 'You may view all online administrators via "/list -a"'
-    - 'Save your buildings via WorldEdit!  http://totalfreedom.me for more information!'
-    - 'Famous players, such as Notch, are always fake!  We are an offline/cracked server!'
-    - 'You may contact TotalFreedoms Support on Twitter!  pravi.us/nGS'
-    - 'You may download TotalFreedomMod here: pravi.us/V8c'
-    - 'MarkByron is TotalFreedoms owner.'
-    - 'Server lagging?  Check the lag via "/tps"'
-    - 'You are allowed to record and stream videos on TotalFreedom :D'
-    - 'An admin abusing?  Report it! pravi.us/vfa'
-    - 'Player vs Player while in creative/god mode it forbidden!'
-    - 'Spawn killing is forbidden!'
-    - 'Invisible potions are allowed!'
-    - 'Serial griefing and trolling will result in permanently being banned!'
-    - 'TotalFreedom does not accept any form of donations!'
-    - 'Racism, Nazism, and Sexism is strictly forbidden!'
-    - 'Join our Mumble server! IP: 64.34.202.140:2862'
+    - 'Thank you for joining JelloFreedom'
 
 # Players who cannot be banned by username
 unbannable_usernames:
-  - honeydew
-  - xephos
-  - captainsparklez
-  - truemu
-  - kiershar
-  - fvdisco
-  - sethbling
-  - notch
-  - jeb_
-  - gamechap
-  - bertiechap
-  - vechs
-  - antvenom
-  - chimneyswift
-  - deadmau5
-  - etho
-  - ethoslab
-  - skydoesminecraft
-  - skythekidrs
-  - tobyturner
-  - xxslyfoxhoundxx
-  - paulsoaresjr
-  - sips_
-  - deadlox
-  - xxslyxx
-  - jeromeasf
-  - dinnerbone
-  - grumm
-  - grum
-  - evilseph
-  - cavemanfilms
-  - herobrine
-  - whiteboy7thst
-  - stampylonghead
-  - stampylongnose
-  - dantdm
-  - gizzy14gazza
+
 
 # IPs that can not be supered
 noadmin_ips:
@@ -317,9 +259,4 @@ autokick:
 
 # Players with access to the overlord command
 overlord_ips:
-  - 176.56.237.227
-  - 192.184.86.138
-  - 107.191.101.27
-  - 178.62.117.94
-  - 141.101.104.243
 
